@@ -1,0 +1,14 @@
+# IconSwap 运行依赖（浏览器 / 桌面 / 批量替换都需要）
+#
+#   pip install -r requirements.txt
+#
+# 版本按实际验证过的环境给出（Python 3.10+ / Windows 10-11）。
+
+flask>=3.0,<4.0
+pillow>=10.0,<13.0
+
+# 批量替换：PE 解析、数字签名检测
+pefile>=2023.2.7
+
+# 快捷方式：WScript.Shell / IShellLinkW
+pywin32>=306        ; sys_platform == "win32"
